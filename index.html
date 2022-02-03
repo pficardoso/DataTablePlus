@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model.Consult</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 3rd party files - Bootstrap CSS; jquery; datables -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+        
+        <!-- native files -->
+        <script type="text/javascript" src="src/bundle.js"></script>
+</head>
+<body>
+    <script>
+        document.write("Hello")
+    </script>
+<div class="row justify-content-center pt-5">
+    <div class="col-11">
+        <div class="row align-items-center py-2" id="row_select_model">
+            <div class="col-auto">
+                Model:
+            </div>
+            <div class="col-auto">
+                <select id="selectModel" class="form-select">
+                </select>
+            </div>
+        </div>
+        <div class="row align-items-center py-2"  id="row_buttons_table">
+            <div class="col-auto">
+                <div class="row g-1">
+                    <div class="col-auto">
+                        <button id="addRowButton" class="btn btn-outline-dark">Add new row</button>
+                    </div>
+                    <div class="col-auto">
+                        <button id="deleteRowButton" class="btn btn-outline-dark">Delete selected row</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row g-1">
+                    <div class="col-3">
+                        <input id="chooseFileButton" type="file" class="form-control">
+                    </div>
+                    <div class="col-auto">
+                        <button id="loadFileButton" class="btn btn-outline-dark">Load File</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="row_table py-2">
+            <table id="inputFormTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Correct</th>
+                        <th>Incorrect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tfoot>
+            </table>
+        </div>
+        <div class="row align-items-center py-2" id="row_submit_request">
+            <div class="col-auto">
+                <button id="obtainLexVocabInfoButton" class="btn btn-outline-dark">Obtain Lex & Vocab info</button>
+            </div>
+            <div class="col-auto">
+                <button id="obtainVocabInfoButton" class="btn btn-outline-dark">Obtain Vocab info</button>
+            </div>
+            <div class="col-auto" id="downloadDiv">
+                <button type="button" id="downloadOutputButton" class="btn btn-link" disabled> Download Output </button>
+            </div>
+        </div>
+        <div class="row">
+           <div id="requestStatusAlert">
+           </div>
+        </div>
+    </div>
+  </div>  
+</body>
+</html>

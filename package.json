@@ -1,0 +1,19 @@
+{
+  "name": "data-table-plus",
+  "version": "0.0.1",
+  "description": "\"Wrapper of Data Table framewerk with improved functionalities\"",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Cardoso",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pficardoso/DataTablePlus"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "datatables.net": "^1.11.4",
+    "jquery": "^3.6.0"
+  }
+}
